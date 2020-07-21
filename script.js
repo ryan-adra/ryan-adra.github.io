@@ -13,7 +13,7 @@ function show_blog_post(){
 }
 
 function enter (){
-  $(this).fadeTo('fast', 0.33);
+  $(this).fadeTo('fast', 0.80);
 }
 function leave (){
   $(this).fadeTo('fast',1);
