@@ -1,4 +1,8 @@
 /* Profile Style */
+html{
+  scroll-behavior: smooth;
+}
+
 #profile_body{
   background-color: #f5deb3;
 }
@@ -80,7 +84,52 @@
 
 .intro{
   display: grid;
-  margin: 50px;
+  margin: 50px;  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
 .item1{
@@ -99,10 +148,32 @@
   border-width: 15px;
 }
 
+.item2 img:hover{
+  border-radius: 50%;
+  width: 340px;
+  height: 340px;
+  border-color: white;
+  border-style: solid;
+  border-width: 15px;
+}
+
+@keyframes upDown {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(20px);}
+}
+
 #scrollDown{
   padding-top: 50px;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: upDown;
 }
 
 .helloWorld{
@@ -112,9 +183,26 @@
   margin-left: 100px;
   font-weight: bolder;
   letter-spacing: 0.2em;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
 }
 
 .fillerText{
+  color: white;
+  margin-left: 100px;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+#scrollText{
   color: white;
   margin-left: 100px;
   font-weight: bolder;
