@@ -100,8 +100,17 @@
 
 #scrollDown{
   padding-top: 50px;
-  font-size: 3ex;
+  font-size: 3em;
   color: white;
+}
+
+#scrollText{
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 100px;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
 }
 
 .helloWorld{
