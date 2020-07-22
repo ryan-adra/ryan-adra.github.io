@@ -78,7 +78,7 @@
   padding-bottom: 50px;
 }
 
-#intro{
+.intro{
   display: grid;
   margin: 50px;
 }
@@ -100,7 +100,7 @@
 
 #scrollDown{
   padding-top: 50px;
-  size: 3ex;
+  font-size: 3ex;
   color: white;
 }
 
