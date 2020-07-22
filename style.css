@@ -205,6 +205,7 @@ html{
 #scrollText{
   color: white;
   margin-left: 100px;
+  margin-top: 20px;
   font-weight: bolder;
   letter-spacing: 0.2em;
 }
