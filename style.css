@@ -98,6 +98,12 @@
   border-width: 15px;
 }
 
+#scrollDown{
+  padding-top: 50px;
+  size: 3ex;
+  color: white;
+}
+
 .helloWorld{
   font-size: 350%;
   color: white;
@@ -115,21 +121,21 @@
   letter-spacing: 0.2em;
 }
 
-#bar{
+.bar{
   display: flex;
   justify-content: flex-end;
 }
 
-#bar div{
+.bar div{
   margin: 20px;
 }
 
-#bar a:link, a:visited{
+.bar a:link, a:visited{
   text-decoration: none;
   color: white;
 }
 
-#bar a:hover, a:active{
+.bar a:hover, a:active{
   text-decoration: none;
   color: black;
 }
@@ -142,6 +148,7 @@
   font-size: 400%;
   margin: 10px;
   margin-left: 0px;
+  
 }
 #aboutMeImage{
   max-width: 100%;
@@ -154,6 +161,21 @@
   justify-content: space-around;
   margin-top: 2rem;
   margin-left: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.footer{
+  background-color:#B8D7FE;
+  width: 100%;
+  margin: 1;
+  padding-top: 30px;
+  color: white;
+}
+
+.footer p{
+  text-align: end;
+  padding-right: 10px;
+  font-weight: lighter;
 }
 
 /* Blog Page */
