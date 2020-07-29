@@ -173,7 +173,7 @@ html{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -182,7 +182,7 @@ html{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -197,8 +197,11 @@ html{
 }
 
 #aboutMeContainer{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 5%;
+  grid-gap: 5%;
+  justify-content: space-evenly;
 }
 
 #aboutMeBio{
@@ -215,11 +218,11 @@ html{
   
 }
 .aboutMeImage{
-  width: 200px;
-  height: 200px;
   border-color: white;
   border-style: solid;
   border-width: 5px;
+  width: auto;
+  height: auto;
 }
 
 #aboutMe{
@@ -241,8 +244,9 @@ html{
 }
 
 .footer p{
-  padding-left: 50px;
+  padding-left: 70px;
   font-weight: lighter;
+  font-size: 20px;
 }
 
 .socials{
@@ -256,6 +260,10 @@ html{
   padding: 20px;
   text-decoration: none;
   color: white;
+}
+
+.socials i{
+  font-size: 20px;
 }
 
 .container {
@@ -304,41 +312,4 @@ html{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-/* Blog Page */
-#blog_body{
-  background-color: #ffe4e1;
-}
-
-#blog_header{
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #ff7f50;
-  font-size: 350%;
-  color: white;
-  padding: 5%;
-  margin-bottom: 1%;
-}
-
-#blog_main{
-  display: flex;
-  flex-direction: column;
-}
-
-.blog_date{
-  font-size: 200%;
-  text-align: center;
-  padding: 1%;
-  font-family: sans-serif;
-  background-color: #fffacd;
-}
-
-.blog_post{
-  font-family: sans-serif;
-  display: none;
-}
-#comment_text{
-  width: 1000px;
-  height: 200px;
 }
