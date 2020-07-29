@@ -8,15 +8,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="websiteFont">
+  <body class="websiteTemplate">
     <div class="header">
-      <div class="bar">
-        <div><a class="linkBoxes" href="index.html">portfolio</a></div>
-        <div><a class="linkBoxes" href="about_me.html">about me</a></div>
-        <div><a class="linkBoxes" href="blog.html">blog</a></div>
-        <div><a class="linkBoxes" href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a></div>
-        <div><a class="linkBoxes" href="https://drive.google.com/file/d/1wn3asG0yk_kSwPU9RvzpZH1Gdv7SfMgd/view?usp=sharing">resume</a></div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">portfolio</a>
+        <a href="about_me.html">about me</a>
+        <a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a>
+        <a href="https://drive.google.com/file/d/1wn3asG0yk_kSwPU9RvzpZH1Gdv7SfMgd/view?usp=sharing">resume</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <div class="intro">
         <div class="item1">
@@ -28,30 +31,37 @@
       </div>
       <div class="intro">
         <div class="item1"><p id="scrollText">Scroll down to see my work.</p></div>
-        <div class="item2"><a href="#aboutMe"><i id="scrollDown" class="fas fa-arrow-circle-down"></i></a></div>
+        <div class="item2"><a href="#portfolio"><i id="scrollDown" class="fas fa-arrow-circle-down"></i></a></div>
       </div>
     </div>
-    <div id="aboutMe">
-      <div></div>
-      <div id="aboutMeBio">
-        <p>About Me</p>
-        <h4>I am a current undergraduate student at University of California, Irvine majoring in Computer Science with an Information Specialization.
-        My passion in technology started back in 8th grade when I wanted to create the next social media network because meeting the online communities
-        I made there has developed me into the person I am today. Now, I want to use technology, specifically UI/UX design, for social good. I am interested in
-        creating inclusive and accessible experiences with the designs I create, hoping to help communities I'm passionate about, including Pilipinx-Americans,
-        first generation immigrants, mental health advocates, and more.
-        <br><br>
-        Some of my interests include socks with sandals, Trader Joe's snacks, and bogo deals. On the weekends, you will see me either catching up with
-        the latest episode of my show, trying a new food place, or buying secondhand clothing.</h4> 
+    <div id="portfolio">
+      <div class="container">
+        <img src="/Users/filoprince/Documents/Github/ryan-adra.github.io/ryan-adra.github.io/assets/smart_manufacturing.png" alt="Smart Manufacturing" class="image">
+        <div class="overlay">
+          <div class="text">Smart Manufacturing</div>
+        </div>
       </div>
+    </div>
     </div>
     <div class="footer">
       <p>LET'S STAY CONNECTED</p>
-      <div class="bar">
+      <div class="socials">
         <div><a href="mailto:ryanadra81099@gmail.com"><i class="far fa-envelope"></i></a></div>
-        <div><a class="linkBoxes" href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/"><i class="fab fa-linkedin-in"></i></a></div>
-        <div><a class="linkBoxes" href="https://github.com/ryan-adra"><i class="fab fa-github"></i></a></div>
+        <div><a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/"><i class="fab fa-linkedin-in"></i></a></div>
+        <div><a href="https://github.com/ryan-adra"><i class="fab fa-github"></i></a></div>
       </div>
     </div>
+
+    <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
   </body>
 </html>
