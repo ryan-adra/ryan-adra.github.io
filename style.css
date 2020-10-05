@@ -3,16 +3,225 @@ html{
 }
 
 .websiteTemplate{
-  font-family: 'Lato',serif;
+  font-family: 'Epilogue','serif';
   margin: 0;
-  background-color:#B8D7FE;
-  color: white;
+  background-color: #FBF7F5;
+  color: black;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2%;
+  margin-bottom: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.homeLandingPage a{
+  text-decoration: none;
+  font-size: 20px;
+  color:  black;
+}
+
+.homeLandingPage a:hover{
+  color: #4070CC;
+}
+
+.topNav {
+  overflow: hidden;
+}
+
+.topNav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.topNav p:hover {
+  border-bottom: 1px solid;
+}
+
+.topNav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .topNav a {display: none;}
+  .topNav a.icon {
+    float: right;
+    display: block;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .topNav.responsive{position: relative;}
+  .topNav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive #myLinks{
+    padding-top: 50px;
+    right: 0;
+  }
+  .topNav.responsive #myLinks a{
+    float: none;
+    display: block;
+  }
 }
 
 .intro{
+  margin-left: 5%;
+  margin-right: 5%;  
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+.intro a{
+  color: #4070CC;
+  text-decoration: none;
+}
+
+.intro a:hover{
+  color: #4070CC;
+  border-bottom: 1px solid;
+}
+
+.portfolio{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.portfolio h1{
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.workBlock{
+  display: flex;
+  flex-direction: row;
+  padding: 2.5%;
+}
+
+@media screen and (max-width: 850px){
+  div.workBlock{
+  flex-direction: column;}
+  div.workBlock .image{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.image {
+  border-style: solid;
+  border-width: 5px;
+  margin-bottom: 30px;
+  border-color: #4070CC;
+  width: 50%;
+  height: 50%;
+  margin-right: 5%;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.image:hover{
+  transform: scale(1.05);
+}
+
+.workText h2{
+  font-weight: bolder;
+  font-size: 170%;
+  letter-spacing: 0.1em;
+}
+
+.workText p{
+  font-size: 110%;
+  color: #2C3E50;
+  opacity: 0.75;
+  margin-bottom: 30px;
+}
+
+.workText a{
+  background-color: #4070CC;
+  color: white;
+  font-family: 'Lato','serif';
+  border-radius: 10px;
+  border-color: #4070CC;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  padding: 15px;
+}
+
+.workText a:hover{
+    opacity: 0.75;
+}
+
+
+.footer{
+  background-color: #FBF7F5;
+  width: 100%;
+  padding-top: 30px;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -50px;
+}
+.clear{
+  margin: 500px;
+}
+.footer p{
+  padding-left: 70px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.socials{
+  padding-left: 50px;
   display: flex;
   justify-content: flex-start;
-  margin: 5%;  
+}
+
+.socials a{
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.socials i{
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -60,243 +269,15 @@ html{
   }
 }
 
-.item2 img{
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
-  border-color: white;
-  border-style: solid;
-  border-width: 15px;
-  margin-left: 100px;
-}
 
-#scrollDown{
-  padding-top: 50px;
-  color: white;
-  font-size: 2.5em;
-  margin-left: 50%;
-}
-
-.helloWorld{
-  font-size: 350%;
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
-  letter-spacing: 0.2em;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-
-.fillerText{
-  color: white;
-  font-weight: bolder;
-  letter-spacing: 0.2em;
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
-
-#scrollText{
-  color: white;
-  padding-top: 20px;
-  font-weight: bolder;
-  letter-spacing: 0.2em;
-}
-
-.menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 2%;
-  margin-bottom: 6%;
-  padding-right: 8%;
-  padding-left: 8%;
-}
-
-.homeLandingPage a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color:white;
-  text-align: center;
-  padding-left: 14px;
-  padding-right: 14px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  border-bottom: 1px solid;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+@media screen and (min-width: 768px){
+  div.intro{
+    font-size: 2.2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media screen and (max-width: 767px){
+  div.intro{
+    font-size: 1.65rem;
   }
-  .topnav.responsive a {
-    display: flex;
-    float: none;
-  }
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  background-color: white;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-#aboutMeBio{
-  text-align: center;
-  padding-bottom: 5%;
-}
-#aboutMeBio p{
-  font-size: 250%;
-  font-weight: bold;
- 
-}
-.footer{
-  background-color: #006FD1;
-  width: 100%;
-  padding-top: 30px;
-  color: white;
-  left: 0;
-  bottom: 0;
-  margin-bottom: -50px;
-}
-.clear{
-  margin: 500px;
-}
-.footer p{
-  padding-left: 70px;
-  font-weight: lighter;
-  font-size: 20px;
-}
-
-.socials{
-  padding-left: 50px;
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: 30px;
-}
-
-.socials a{
-  padding: 20px;
-  text-decoration: none;
-  color: white;
-}
-
-.socials i{
-  font-size: 20px;
-}
-
-.container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-color: white;
-  border-style: solid;
-  border-width: 10px;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 102%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #006FD1;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }

@@ -4,6 +4,7 @@
     <title>hello world, i'm ryan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3699bbdc16.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
@@ -13,40 +14,61 @@
   <body class="websiteTemplate">
     <div class="menu">
       <div class="homeLandingPage">
-        <a href="index.html">Ryan Adra</a>
+        <a href="index.html"><p>Ryan Adra</p></a>
       </div>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html">work</a>
-        <a href="about_me.html">about me</a>
-        <a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a>
-        <a href="https://drive.google.com/file/d/1wn3asG0yk_kSwPU9RvzpZH1Gdv7SfMgd/view?usp=sharing">resume</a>
+      <div class="topNav" id="myTopNav">
+        <div id="myLinks">
+          <a href="index.html"><p>Work</p></a>
+          <a href="about_me.html"><p>About</p></a>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <p><i class="fa fa-bars"></i></p>
         </a>
       </div>
     </div>
     <div class="intro">
-      <div class="item1">
-        <p class="helloWorld">HELLO WORLD.</p>
-        <p class="helloWorld">I'M RYAN.</p>
-        <p class="fillerText">Your friendly UI/UX designer by day and aspiring anime character by night. <br> Based in Los Angeles.</p>
-      </div>
-      <div class="item2"><a href="about_me.html"><img src="/assets/ryan_adra_img.png" alt="Ryan Adra's picture if you cannot see it."></a></div>
+      <p>Hello World. I'm <a href="about_me.html">Ryan Adra</a>. 
+        I'm currently an undergrad at University of California, Irvine studying Computer Science. 
+        I'm an aspiring <a href="#portfolio">UX/Product Designer</a> who is passionate about designing inclusive and intuitive user experiences
+        and creating technology for social good. Check out my <a href="https://drive.google.com/file/d/1wn3asG0yk_kSwPU9RvzpZH1Gdv7SfMgd/view?usp=sharing">resume</a>
+        or <a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a>.
+      </p>
     </div>
-    <div class="intro">
-      <div class="item1"><p id="scrollText">Scroll down to see my work.</p></div>
-      <div class="item2"><a href="#portfolio"><i id="scrollDown" class="fas fa-arrow-circle-down"></i></a></div>
-    </div>
-    <div id="portfolio">
+    <div class="portfolio">
+      <div></div>
+      <h1>FEATURED WORK</h1>
       <div class="container">
-        <img src="/assets/smart_manufacturing.png" alt="Smart Manufacturing" class="image">
-        <div class="overlay">
-          <div class="text">Smart Manufacturing</div>
+        <div class="workBlock">
+          <img src="/assets/crime_survivors.png" alt="Crime Survivors Online Resource Guide" class="image">
+          <div class="workText">
+            <h2>Crime Survivors</h2>
+            <p>An online resource guide for Crime Survivors, a local non profit organization. </p>
+            <a href="index.html">Read Case Study</a>
+          </div>
         </div>
+        <div class="workBlock">
+          <img src="/assets/webtoon.png" alt="Webtoon Entertainment Logo" class="image">
+          <div class="workText">
+            <h2>Webtoon</h2>
+            <p>Experiencing Product Research and Project Management.</p>
+            <a href="index.html">Read My Experience</a>
+          </div>
+        </div>
+        <div class="workBlock">
+          <img src="/Users/filoprince/Documents/Github/ryan-adra.github.io/ryan-adra.github.io/assets/smart_manufacturing.png" alt="Smart Manufacturing Website Implementation" class="image">
+          <div class="workText">
+            <h2>Smart Manufacturing</h2>
+            <p>A website aimed to highlight workflow inefficiences and provide insight to improve upon them.</p>
+            <a href="index.html">Read Case Study</a>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
     </div>
     <div class="footer">
+      <hr class="solid">
       <p>LET'S STAY CONNECTED</p>
       <div class="socials">
         <div><a href="mailto:ryanadra81099@gmail.com"><i class="far fa-envelope"></i></a></div>
@@ -56,13 +78,12 @@
     </div>
 
     <script>
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementById("myTopNav");
+  if (x.className === "topNav") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "topNav";
   }
 }
 </script>
