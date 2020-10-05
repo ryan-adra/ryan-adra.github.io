@@ -195,15 +195,14 @@ html{
   margin: 500px;
 }
 .footer p{
-  padding-left: 70px;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 0.2em;
 }
 
 .socials{
-  padding-left: 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .socials a{
@@ -212,8 +211,13 @@ html{
   color: black;
 }
 
+.socials a:hover{
+  padding: 20px;
+  text-decoration: none;
+  color:#4070CC;
+}
 .socials i{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .container {
