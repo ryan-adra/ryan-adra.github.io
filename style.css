@@ -234,17 +234,12 @@ html{
   display: flex;
 }
 
-.aboutMeCard img{
-  width: 40%;
-  height: 60%;
-}
-
 @media screen and (max-width: 850px){
   div.aboutMeCard{
   flex-direction: column;
   padding: 2.5%
   }
-  div.aboutMeCard img{
+  div.aboutMeCard .image{
     width: 80%;
     height: 80%;
     margin-left: auto;
