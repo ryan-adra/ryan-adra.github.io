@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3699bbdc16.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="websiteTemplate">
+    <!-- Navbar Menu with Separate Tabs -->
     <div class="menu">
       <div class="homeLandingPage">
         <a href="index.html"><p>Ryan Adra</p></a>
@@ -20,11 +20,13 @@
           <a href="index.html"><p>Work</p></a>
           <a href="about_me.html"><p>About</p></a>
         </div>
+        <!-- Hamburger Icon that's displayed in smaller screens -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <p><i class="fa fa-bars"></i></p>
         </a>
       </div>
     </div>
+    <!-- Introduction to website with links to several other places to learn about Ryan Adra. -->
     <div class="intro">
       <p>Hello World. I'm <a href="about_me.html">Ryan Adra</a>. 
         I'm currently an undergrad at University of California, Irvine studying Computer Science. 
@@ -33,12 +35,13 @@
         or <a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a>.
       </p>
     </div>
+    <!-- Work section titled portfolio featuring selected works from Ryan Adra -->
     <div class="portfolio">
       <div></div>
       <h1>FEATURED WORK</h1>
       <div class="container">
         <div class="workBlock">
-          <img src="/assets/crime_survivors.png" alt="Crime Survivors Online Resource Guide" class="image">
+          <img src="/assets/crime_survivors.png" alt="Image of the Landing Page of the Crime Survivors Online Resource Guide" class="image">
           <div class="workText">
             <h2>Crime Survivors</h2>
             <p>An online resource guide for Crime Survivors, a local non profit organization. </p>
@@ -46,7 +49,7 @@
           </div>
         </div>
         <div class="workBlock">
-          <img src="/assets/webtoon.png" alt="Webtoon Entertainment Logo" class="image">
+          <img src="/assets/webtoon.png" alt="Webtoon Entertainment Logo in Green and White" class="image">
           <div class="workText">
             <h2>Webtoon</h2>
             <p>Experiencing Product User Research and Project Management.</p>
@@ -54,16 +57,16 @@
           </div>
         </div>
         <div class="workBlock">
-          <img src="/assets/smart_manufacturing.png" alt="Smart Manufacturing Website Implementation" class="image">
+          <img src="/assets/smart_manufacturing.png" alt="Landing Dashboard of the Smart Manufacturing Website" class="image">
           <div class="workText">
             <h2>Smart Manufacturing</h2>
             <p>A website aimed to highlight workflow inefficiences and provide insight to improve upon them.</p>
             <a href="https://www.notion.so/Smart-Manufacturing-68b39c5a477c441f9d04e14e7dda2fb8">Read Case Study</a>
           </div>
         </div>
-        
       </div>
     </div>
+    <!-- Footer Section with social media links -->
     <div class="footer">
       <p>LET'S STAY CONNECTED</p>
       <div class="socials">
@@ -72,16 +75,16 @@
         <div><a href="https://github.com/ryan-adra"><i class="fab fa-github icon-4x"></i></a></div>
       </div>
     </div>
-
+    <!-- Simple Javascript to help implement the responsiveness of the hamburger icon -->
     <script>
-function myFunction() {
-  var x = document.getElementById("myTopNav");
-  if (x.className === "topNav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topNav";
-  }
-}
-</script>
+      function myFunction() {
+        var x = document.getElementById("myTopNav");
+        if (x.className === "topNav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topNav";
+        }
+      }
+    </script>
   </body>
 </html>
