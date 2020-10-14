@@ -90,9 +90,19 @@ html{
   -ms-animation: fadeIn ease 3s;
 }
 
-@media screen and (min-width: 768px) { div.intro{font-size: 2.00em; padding-right: 9%;} }
+@media screen and (min-width: 768px) 
+{ 
+  div.intro{
+    font-size: 2.00em; padding-right: 9%;
+  } 
+}
 
-@media screen and (max-width: 767px) { div.intro{font-size: 1.25em;} }
+@media screen and (max-width: 767px) 
+{ 
+  div.intro{
+    font-size: 1.25em;
+  } 
+}
 
 .intro a{
   color: #4070CC;
@@ -125,8 +135,8 @@ html{
 
 @media screen and (max-width: 850px){
   div.workBlock{
-  flex-direction: column;
-  padding: 2.5%
+    flex-direction: column;
+    padding: 2.5%
   }
   div.workBlock .image{
     width: 80%;
@@ -226,12 +236,6 @@ html{
 
 .socials i{
   font-size: 30px;
-}
-
-.container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #aboutMe{
