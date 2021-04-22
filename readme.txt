@@ -1,18 +1,137 @@
-1.  The number of assignment points I believe I have completed is at least 9 points. 
-    I would say I may miss a point either in responsiveness or validity for accessibility.
-    My responsiveness can be better since I know that my content may go from looking tiny to 
-    being big again afer reaching a certain px screen width, which may cause a problem, but
-    I am not too sure about that. I also checked my website with the accessibility checker
-    and have tried to fix some problems, but I know I have some other problems I could easily
-    resolve if I use clearer text or use other types of tags.
-2.  HTML content: at least one image with descriptive alt attribute(s), 
-    appropriate headings and paragraph text, links to external page(s), multiple pages,
-    with appropriate navigation between them, adding custom icons from Font Awesome.
-    CSS content: modifying padding and margins to indent content and enhance readability,
-    modifying link, text color, or other colors to be visually appealing, adding custom font(s)
-    from Google fonts to add more personality.
-    Advanced feature(s): having a navigation bar, leveraging nested selectors to specify format
-3.  This took me about 3-4 days in total to complete the assignment.
-4.  I mainly used w3schools.com to find tutorials on how to implement certain CSS features.
-5.  I didn't really consult classmates, but I looked at other peoples' portfolios online to gain
-    some design inspiration for my own portfolio.
+==================================================================================================
+
+DESCRIPTION:
+
+HOLA is a modern and stylish vCard website template. Designed to be a resume, vCard, portfolio 
+template, it's the perfect template for creative designers, developers, freelancers, photographer 
+or any creative profession. It is fully responsive and retina/hi-dpi ready. It will look great 
+on any devices from desktop to mobile phones. It has blog page templates, working contact form, 
+stylish portfolio section and other features you will only find on premium templates. Built with 
+clean and organized code, this template is also very easy to customize.
+
+==================================================================================================
+
+
+LICENSE:
+
+This free resource is provided by Styleshout.com and is free to use in 
+both personal and commercial projects.
+
+
+Rights:
+-------
+
+You are permitted to use this free resource in any number of personal and commercial projects for 
+yourself or a client. You may modify the resource according to your requirements and include them 
+in your projects under the following condition - you MUST give appropriate credit, provide an 
+attribution link to styleshout.com.
+
+
+Prohibitions:
+-------------
+
+You are not permitted to resell or redistribute(even for free) the resource "as is" without 
+prior consent. If you would like to republish or promote this resource on your site, please 
+link back to the appropriate resource page on styleshout.com where users can find the download 
+and not directly to the download zip file.
+
+
+Attribution: 
+------------
+
+You must include a credit link to our website(https://www.styleshout.com) somewhere on your site. 
+We prefer the footer credit that comes with the template but you are still free to move it 
+somewhere else.
+
+
+
+If you have any questions about the License, feel free to contact us.
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+REMOVING THE ATTRIBUTION LINK:
+
+We understand that there are situations where you want to use our templates without 
+the crediting obligation. If that's your case, you can always send us a 
+credit removal fee of 10 USD through Paypal. This will allow you to use a single 
+template attribution/credit link free on ONE DOMAIN name.
+
+You can send your payments through Paypal to this address: ealigam@gmail.com
+
+If possible, kindly send us the site's url where the template is being used. 
+Also, keep your Paypal receipt as proof of payment and your good to go.
+
+
+------------------------------------------------------------------------------------------------------ 
+
+
+SUPPORT:
+    
+Since HOLA is distributed for free, support is not offered. HOLA is coded according 
+to current web standards and we did our best to make the template easy to use and modify.
+If you have minimum web development experience, you can easily modify the template. 
+However, If you're still new to HTML and CSS, I suggest that you visit the 
+following tutorials:
+
+ - https://webdesign.tutsplus.com/courses/30-days-to-learn-html-css
+ - http://learn.shayhowe.com/html-css/
+
+These will teach you the essentials of HTML and CSS. In addition, if you want to include
+jQuery in your skill-set, you can also check out these tutorials: 
+
+ - https://code.tutsplus.com/courses/30-days-to-learn-jquery
+ - http://try.jquery.com/
+
+
+
+------------------------------------------------------------------------------------------------------ 
+
+
+GET THE LATEST VERSION:
+
+We update our templates on a regular basis so to make sure that you have the latest version, 
+always download the template files directly on our website(https://www.styleshout.com/)
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+SOURCES AND CREDITS:
+
+I've used the following resources as listed.
+
+Fonts:
+ - Montserrat Font (https://www.google.com/fonts/specimen/Montserrat)
+ - Libre Baskerville Font (https://fonts.google.com/specimen/Libre+Baskerville) 
+
+Icons:
+ - Iconic font (https://iconmonstr.com/iconicfont/)
+
+Stock Photos and Graphics:
+ - Unsplash.com (https://unsplash.com/)
+ - gratisography (https://gratisography.com/)
+ 
+Javascript Files:
+
+ - JQuery (http://jquery.com/)
+ - Modernizr (http://modernizr.com/)
+ - Waypoints (http://imakewebthings.com/jquery-waypoints/)
+ - jQuery Placeholder (https://github.com/mathiasbynens/jquery-placeholder)
+ - jQuery Validation Plugin (https://jqueryvalidation.org/)
+ - pace js (http://github.hubspot.com/pace/)
+ - Masonry (http://masonry.desandro.com/)
+ - Imagesloaded (https://imagesloaded.desandro.com/)
+ - Parallax.js (http://pixelcog.github.io/parallax.js/)
+ - Slick Slider (http://kenwheeler.github.io/slick/)
+
+
+
+-------------------------------------------------------------------------------------------------------
+
+
+Thanks for downloading from Styleshout :)
+
+

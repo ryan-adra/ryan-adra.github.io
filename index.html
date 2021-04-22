@@ -1,90 +1,514 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Ryan Adra</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3699bbdc16.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body class="websiteTemplate">
-    <!-- Navbar Menu with Separate Tabs -->
-    <div class="menu">
-      <div class="homeLandingPage">
-        <a href="index.html"><p>Ryan Adra</p></a>
-      </div>
-      <div class="topNav" id="myTopNav">
-        <div id="myLinks">
-          <a href="index.html"><p>Work</p></a>
-          <a href="about_me.html"><p>About</p></a>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html"><!-- <img src="images/logo.png" alt="Homepage"> --><h1 style="color: white">ryan.</h1></a>
         </div>
-        <!-- Hamburger Icon that's displayed in smaller screens -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <p><i class="fa fa-bars"></i></p>
-        </a>
-      </div>
-    </div>
-    <!-- Introduction to website with links to several other places to learn about Ryan Adra. -->
-    <div class="intro">
-      <p>Hello World. I'm <a href="about_me.html">Ryan Adra</a>. 
-        I'm currently an undergrad at University of California, Irvine studying Computer Science. 
-        I'm an aspiring <a href="#portfolio">UX/Product Designer</a> who is passionate about designing inclusive and intuitive user experiences
-        and creating technology for social good. Check out my <a href="https://drive.google.com/file/d/1lr7nEQsP_3Dkpkf_EfllDYTaIUme-6Ou/view?usp=sharing">resume</a>
-        or <a href="https://www.linkedin.com/in/ryan-matthew-adra-0a8b16152/">let's connect</a>.
-      </p>
-    </div>
-    <!-- Work section titled portfolio featuring selected works from Ryan Adra -->
-    <div class="portfolio">
-      <div></div>
-      <h1>FEATURED WORK</h1>
-      <div class="container">
-        <div class="workBlock">
-          <img src="assets/crime_survivors.png" alt="Image of the Landing Page of the Crime Survivors Online Resource Guide" class="image">
-          <div class="workText">
-            <h2>Crime Survivors</h2>
-            <p>An online resource guide for Crime Survivors, a local non profit organization. </p>
-            <a href="https://www.notion.so/Crime-Survivors-4afd7348db5b42d7ae099bccd7a05da4">Read Case Study</a>
-          </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" class="s-home page-hero target-section" data-image-src="images/tumblr_mb79hvjfbR1qc8e6lo1_500.gif" data-parallax="scroll" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Hello World</h3>
+
+                <h1>
+                    I am <b>Ryan Adra.<b></b> <br>
+                    UX designer by day. <br>
+                    Pro couch potato by night. <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Featured Works
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        Learn About Me
+                    </a>
+                </div>
+
+                <div class="home-content__scroll">
+                    <a href="#about" class="scroll-link smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.linkedin.com/in/ryanadra/"><i class="im im-linkedin" aria-hidden="true"></i><span>Linkedin</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/ryan-adra"><i class="im im-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+            <li>
+                <a href="mailto:ryanadra81099@gmail.com"><i class="im im-mail" aria-hidden="true"></i><span>Email</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+        
+        <div class="row section-intro">
+            <div class="col-six tab-full" >
+                <h3>About</h3>
+                <h1>Who is Ryan Adra?</h1>
+                <p class="lead" id="about-intro">Hello! I'm a recent graduate from UC Irvine with a B.S. in Computer Science.
+                    I love exploring the intersections between <b>design</b> and <b>tech for social good</b> to design products 
+                    and user experiences aimed to empower and uplift folks from diverse communities with different experiences.
+                </p>
+            </div>
+            <div class="col-six tab-full">
+                <img src="/images/ryan_Adra_pic.JPG">
+            </div>
+            
         </div>
-        <div class="workBlock">
-          <img src="assets/webtoon.png" alt="Webtoon Entertainment Logo in Green and White" class="image">
-          <div class="workText">
-            <h2>Webtoon</h2>
-            <p>Experiencing Product User Research and Project Management.</p>
-            <a href="https://www.notion.so/Webtoon-Entertainment-908e0ff2063d4828bc6b36c80673e2c6">Read My Experience</a>
-          </div>
+
+        <div class="row about-content about-content--buttons">
+            <div class="col-full tab-full">
+                <a href="https://drive.google.com/file/d/1WrKOlTn7AQ-kcO-CuZ0QVAdMnI_1Yllf/view?usp=sharing" class="btn btn--primary full-width">View My Resume →</a>
+            </div>
+            
+
+        </div> <!-- end about-content buttons -->
+
+         <!-- end about-content -->
+          <!-- skills & interests
+    ================================================== -->
+    <section id="blog" class="s-blog target-section">
+
+        <div class="row section-intro">
+            <div class="col-full">
+                <h3>Skills + Interests</h3>
+                <h1>Design, Tech, + More</h1>
+                <p class="lead">While I have interests in design and tech, 
+                    I have decided to focus on other hobbies and passions that also make me happy.</p>
+            </div>
         </div>
-        <div class="workBlock">
-          <img src="assets/smart_manufacturing.png" alt="Landing Dashboard of the Smart Manufacturing Website" class="image">
-          <div class="workText">
-            <h2>Smart Manufacturing</h2>
-            <p>A website aimed to highlight workflow inefficiences and provide insight to improve upon them.</p>
-            <a href="https://www.notion.so/Smart-Manufacturing-68b39c5a477c441f9d04e14e7dda2fb8">Read Case Study</a>
-          </div>
+
+        <div class="row blog-content">
+            <div class="col-full">
+
+                <div class="blog-list block-1-2 block-tab-full">
+                    <div class="col-block"> 
+                        
+                        <h2 class="h01">Design</h2>
+                        <li>Figma has become my new best friend. This is my main software I use for creating wireframes, mockups, and prototypes.</li>
+                        <li>I've been dabbling in learning the Adobe Creative Suite. I've done a few personal projects in Adobe Photoshop and Adobe Illustrator so far, and I plan to learn Adobe XD in the near future.</li>
+                        <li>While most of my design experiences have been in web interfaces, I would like to explore mobile interfaces and possibly AR/VR.</li>
+
+                    </div>
+                    <div class="col-block"> 
+                        
+                        <h2 class="h01">Life</h2>
+                        <li>Got back onto Twitter to indulge in my inner young teen and having a separate account to talk about my love for Kpop with an online community.</li>
+                        <li>Dreaming about the places I plan to travel to once the panda express has subsided and it's safe to do so. South Korea, I'll be seeing you sometime soon.</li>
+                        <li>Spending more time to cherish the relationships I have with people in my life as well as creating new connections in a post-grad life.</li>
+
+                    </div>
+                    <div class="col-block"> 
+                        
+                        <h2 class="h01">TV Shows</h2>
+                        <li>One Day at a Time</li>
+                        <li>Attack on Titan</li>
+                        <li>Gilmore Girls</li>
+
+                    </div>
+                    <div class="col-block"> 
+                        
+                        <h2 class="h01">Music</h2>
+                        <li>Kiss Me More by Doja Cat & SZA</li>
+                        <li>Until Forever by Tori Kelly</li>
+                        <li>Love Child by Raveena</li>
+
+                    </div>
+                    
+                    
+                </div> <!-- end blog-list -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end blog-content -->
+
+    </section> <!-- end s-blog -->
+
+        <div class="row about-content about-content--timeline">
+            <div class="row narrow section-intro">
+
+                <div class="col-full">
+                    <h3>My Experience</h3>
+                    <h1>Work, Work, Work</h1>
+                    <p class="lead">My experiences with design and product researc have shaped me to become the UX designer I am right now and want to grow into in the future.</p>
+                </div>
+
+            </div>
+                
+
+            <div class="col-six tab-full left">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">incoming June 2021</p>
+                            <h3>National Institutes of Health</h3>
+                            <h5>Design Fellow</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>I have been selected as 1 out of 100 fellows to be part of the Civic Digital Fellowship. 
+                               I am 1 out of 17 fellows partnered with the National Institutes of Health as a Design Fellow, specifically for the NIEHS.
+                               I am excited to work in a large scale project affecting many folks from different walks of life.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">August 2020 - present</p>
+                            <h3>Commit the Change, UCI</h3>
+                            <h5>UX Design Lead</h5>
+                        </div>
+                        <div class="timeline__desc">	
+                            <p>I am a UX Design Lead for Commit the Change, UCI, a student organization with the motto "Tech with Purpose".
+                               My team's project is partnered with the nonprofit organization Waymakers, and we are designing a volunteer dashboard/inventory management system,
+                               which will help internal organization processes become more efficient, saving them time to focus more on their advocacy work.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end left -->
+
+            <div class="col-six tab-full right">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">September 2020 - December 2020</p>
+                            <h3>Curicular</h3>
+                            <h5>UX Design Intern</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>I interned at Curicular, an edtech startup whose mission is to make the college admissions process more affordable and accessible for high school students.
+                               I was 1 of 4 UX Design interns, and our work mainly consisted of redesigning the company website, thus enhancing the user experience and making the business more profit.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">April 2020 - July 2020</p>
+                            <h3>WEBTOON Entertainment Inc.</h3>
+                            <h5>Research Intern</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>My first real-world experience in a product team was becoming a Research Intern for the company.
+                               My work consisted of collecting data related to the product and analyzing the information in order to 
+                               understand user behaviors and trends and using this data in order to improve the user experience with the WEBTOON app 
+                               and make the company more profit.
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                </div> <!-- end timeline -->
+            </div> <!-- end right -->
+
+        </div> <!-- end about-content timeline -->
+
+    </section> <!-- end about -->
+    
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3>Portfolio</h3>
+                <h1>See My Latest Work</h1>
+                
+                <p class="lead">I am grateful to have worked on these projects as I was able to learn something new in each one.</p>
+            </div>
         </div>
-      </div>
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="http://strangers-or-not.vercel.app" title="Strangers or Not" data-size="1000x1000">
+                                <img src="images/strangers-or-not.png" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Strangers or Not
+                            </h3>
+                            <p class="item-folio__cat">
+                                Strangers or Not is a website based off of the card game, We're Not Really Strangers.
+                            </p>
+                        </div>
+
+                        <a href="http://strangers-or-not.vercel.app" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://www.notion.so/Crime-Survivors-4afd7348db5b42d7ae099bccd7a05da4" title="Crime Survivors" data-size="1000x1000">
+                                <img src="images/crime_surivors.png" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Crime Survivors
+                            </h3>
+                            <p class="item-folio__cat">
+                                Crime Survivors is an online resource guide for victims of crime.
+                            </p>
+                        </div>
+
+                        <a href="https://www.notion.so/Crime-Survivors-4afd7348db5b42d7ae099bccd7a05da4" class="item-folio__project-link" title="Case Study link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://www.notion.so/Webtoon-Entertainment-908e0ff2063d4828bc6b36c80673e2c6" title="Webtoon Entertainment" data-size="1000x1000">
+                                <img src="images/webtoon.png" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Webtoon Entertainment
+                            </h3>
+                            <p class="item-folio__cat">
+                                Webtoon Entertainment is a website providing folks free online web comics.
+                            </p>
+                        </div>
+
+                        <a href="https://www.notion.so/Webtoon-Entertainment-908e0ff2063d4828bc6b36c80673e2c6" class="item-folio__project-link" title="Case Study link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+                <div class="masonry__brick">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="https://www.notion.so/Smart-Manufacturing-68b39c5a477c441f9d04e14e7dda2fb8" title="Smart Manufacturing" data-size="1000x1000">
+                                <img src="images/strangers-or-not.png" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Smart Manufacturing
+                            </h3>
+                            <p class="item-folio__cat">
+                                Smart Manufacturing improves workflow efficiency for manufacturing companies.
+                            </p>
+                        </div>
+
+                        <a href="https://www.notion.so/Smart-Manufacturing-68b39c5a477c441f9d04e14e7dda2fb8" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                
+
+            </div>
+        </div> <!-- end masonry -->
+
+    </section> <!-- end works -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><h1 style="color: white">ryan.</h1></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/in/ryanadra/">
+                        <i class="im im-linkedin" aria-hidden="true"></i>
+                        <span>Linkedin</span>
+                    </a></li>
+                    <li><a href="https://github.com/ryan-adra">
+                        <i class="im im-github" aria-hidden="true"></i>
+                        <span>Github</span>
+                    </a></li>
+                    <li><a href="http://mailto:ryanadra81099@gmail.com">
+                        <i class="im im-mail" aria-hidden="true"></i>
+                        <span>Email</span>
+                    </a></li>
+                </ul>
+                    
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Hola 2017</span> 
+                    <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>	
+                </div>
+
+                <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <!--
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-    <!-- Footer Section with social media links -->
-    <div class="footer">
-      <p>LET'S STAY CONNECTED</p>
-      <div class="socials">
-        <div><a href="mailto:ryanadra81099@gmail.com"><i class="far fa-envelope"></i></a></div>
-        <div><a href="https://www.linkedin.com/in/ryanadra"><i class="fab fa-linkedin-in icon-4x"></i></a></div>
-        <div><a href="https://github.com/ryan-adra"><i class="fab fa-github icon-4x"></i></a></div>
-      </div>
-    </div>
-    <!-- Simple Javascript to help implement the responsiveness of the hamburger icon -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopNav");
-        if (x.className === "topNav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topNav";
-        }
-      }
-    </script>
-  </body>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
